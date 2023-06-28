@@ -6,16 +6,35 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     var body: some View {
-        Text("EndoEase")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        NavigationView {
+            VStack(spacing: 20) {
+                NavigationLink(destination:TalkItOutView()) {
+                    Text("Talk it Out")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.purple)
+                        .cornerRadius(10)
+                }
+                
+                NavigationLink(destination: RecordSymptomsView()) {
+                    Text("Record My Symptoms")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.purple)
+                        .cornerRadius(10)
+                }
+                
+                NavigationLink(destination: LearnMoreView()) {
+                    Text("Learn More")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.purple)
+                        .cornerRadius(10)
+                }
+            }
+            .navigationTitle("EndoEase")
+        }
     }
 }
