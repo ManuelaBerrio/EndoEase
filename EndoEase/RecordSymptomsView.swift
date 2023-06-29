@@ -116,3 +116,9 @@ struct RecordSymptomsView: View {
         }
     }
 }
+struct RecordSymptoms_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+        

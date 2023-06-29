@@ -82,3 +82,9 @@ struct TalkItOutView: View {
      
     }
 }
+struct TalkItOut_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+        
