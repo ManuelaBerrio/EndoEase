@@ -14,6 +14,7 @@
 		8F04534D2A4CDD3B003CADAF /* TalkItOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F04534C2A4CDD3B003CADAF /* TalkItOutView.swift */; };
 		8F04534F2A4CDD61003CADAF /* RecordSymptomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F04534E2A4CDD61003CADAF /* RecordSymptomsView.swift */; };
 		8F0453512A4CDD88003CADAF /* LearnMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0453502A4CDD88003CADAF /* LearnMoreView.swift */; };
+		8F0453552A4DF338003CADAF /* SelectMySymptomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0453542A4DF338003CADAF /* SelectMySymptomsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8F04534C2A4CDD3B003CADAF /* TalkItOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkItOutView.swift; sourceTree = "<group>"; };
 		8F04534E2A4CDD61003CADAF /* RecordSymptomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSymptomsView.swift; sourceTree = "<group>"; };
 		8F0453502A4CDD88003CADAF /* LearnMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreView.swift; sourceTree = "<group>"; };
+		8F0453542A4DF338003CADAF /* SelectMySymptomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMySymptomsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		42662F0D2A4B600D0064F77C = {
 			isa = PBXGroup;
 			children = (
+				8F0453542A4DF338003CADAF /* SelectMySymptomsView.swift */,
 				42662F182A4B600D0064F77C /* EndoEase */,
 				42662F172A4B600D0064F77C /* Products */,
 			);
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0453552A4DF338003CADAF /* SelectMySymptomsView.swift in Sources */,
 				8F0453512A4CDD88003CADAF /* LearnMoreView.swift in Sources */,
 				42662F1C2A4B600D0064F77C /* ContentView.swift in Sources */,
 				8F04534F2A4CDD61003CADAF /* RecordSymptomsView.swift in Sources */,

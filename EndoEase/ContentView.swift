@@ -37,14 +37,15 @@ struct ContentView: View {
                             .padding()
                             .background(Color.yellow)
                             .cornerRadius(10)
+                        
                     }
                 }
                 
             }
         }
     }
+}
 
-        }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
