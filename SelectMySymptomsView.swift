@@ -8,133 +8,138 @@
 import Foundation
 import SwiftUI
 struct SelectMySymptomsView: View {
-    @State private var VomitingSelected = false
-    @State private var FaintingspellsSelected = false
-    @State private var DizzinessSelected = false
-    @State private var HeadachesSelected = false
-    @State private var MigrainesSelected = false
-    @State private var BodyChillsSelected = false
-    @State private var HeavyBleedingSelected = false
-    @State private var Vomiting = ""
-    @State private var Faintingspells = ""
-    @State private var Dizziness = ""
-    @State private var Headaches = ""
-    @State private var Migraines = ""
-    @State private var BodyChills = ""
-    @State private var HeavyBleeding = ""
-    var body: some View {
-        NavigationView {
-            VStack(spacing: 20){
-                ZStack{
-                    Image("Daisy")
-                        .resizable()
-                        .ignoresSafeArea()
+let symptomToEmoji = [
+"Vomiting": "🤢",
+"Fainting spells": "🥴",
+"Dizziness": "🥺",
+"Headaches": "🤕",
+"Migraines": "😖",
+"Body chills": "🥶",
+"Heavy bleeding": "🩸"]
+
+@State private var vomitingSelected = false
+@State private var faintingSpellsSelected = false
+@State private var dizzinessSelected = false
+@State private var headachesSelected = false
+@State private var migrainesSelected = false
+@State private var bodyChillsSelected = false
+@State private var heavyBleedingSelected = false
+
+var body: some View {
+    NavigationView {
+        VStack(spacing: 20) {
+            Spacer()
+            
+            ZStack {
+                Image("Daisy")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                
+                VStack(spacing: 20) {
+                    Spacer()
                     
-                    VStack(spacing: 20){
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        HStack{
-                            Text(Vomiting)
-                            Button("Vomiting"){
-                                VomitingSelected.toggle()
-                                
-                            }
-                            .font(.title2)
-                            .padding(.all, 5.0)
-                            
+                    VStack(spacing: 20) {
+                        Button(action: {
+                            vomitingSelected.toggle()
+                        }) {
+                            Text("Vomiting")
+                                .font(.title3)
+                                .foregroundColor(.black)
+                                .padding([.top, .bottom], 10)
+                                .padding([.leading, .trailing], 15)
                         }
-                        .font(.largeTitle)
-                        .buttonStyle(.borderedProminent)
+                        .background(vomitingSelected ? Color.yellow : Color.gray)
+                        .cornerRadius(10)
                         
-                        HStack{
-                            Text(Faintingspells)
-                            Button("Fainting spells"){
-                                FaintingspellsSelected.toggle()
-                            }
-                            .font(.title2)
-                            .padding(.all,5.0)
+                        Button(action: {
+                            faintingSpellsSelected.toggle()
+                        }) {
+                            Text("Fainting Spells")
+                                .font(.title3)
+                                .foregroundColor(.black)
+                                .padding([.top, .bottom], 10)
+                                .padding([.leading, .trailing], 15)
                         }
-                        .font(.largeTitle)
-                        .buttonStyle(.borderedProminent)
+                        .background(faintingSpellsSelected ? Color.yellow : Color.gray)
+                        .cornerRadius(10)
                         
-                        HStack{
-                            Text(Dizziness)
-                            Button("Dizziness"){
-                                DizzinessSelected.toggle()
-                            }
-                            .font(.title2)
-                            .padding(.all,5.0)
+                        Button(action: {
+                            dizzinessSelected.toggle()
+                        }) {
+                            Text("Dizziness")
+                                .font(.title3)
+                                .foregroundColor(.black)
+                                .padding([.top, .bottom], 10)
+                                .padding([.leading, .trailing], 15)
                         }
-                        .font(.largeTitle)
-                        .buttonStyle(.borderedProminent)
+                        .background(dizzinessSelected ? Color.yellow : Color.gray)
+                        .cornerRadius(10)
                         
-                        HStack{
-                            Text(Headaches)
-                            Button("Headaches"){
-                                HeadachesSelected.toggle()
-                            }
-                            .font(.title2)
-                            .padding(.all,5.0)
+                        Button(action: {
+                            headachesSelected.toggle()
+                        }) {
+                            Text("Headaches")
+                                .font(.title3)
+                                .foregroundColor(.black)
+                                .padding([.top, .bottom], 10)
+                                .padding([.leading, .trailing], 15)
                         }
-                        .font(.largeTitle)
-                        .buttonStyle(.borderedProminent)
+                        .background(headachesSelected ? Color.yellow : Color.gray)
+                        .cornerRadius(10)
                         
-                        HStack{
-                            Text(Migraines)
-                            Button("Migraines"){
-                                MigrainesSelected.toggle()
-                            }
-                            .font(.title2)
-                            .padding(.all,5.0)
+                        Button(action: {
+                            migrainesSelected.toggle()
+                        }) {
+                            Text("Migraines")
+                                .font(.title3)
+                                .foregroundColor(.black)
+                                .padding([.top, .bottom], 10)
+                                .padding([.leading, .trailing], 15)
                         }
-                        .font(.largeTitle)
-                        .buttonStyle(.borderedProminent)
+                        .background(migrainesSelected ? Color.yellow : Color.gray)
+                        .cornerRadius(10)
                         
-                        HStack{
-                            Text(BodyChills)
-                            Button("Body chills"){
-                                BodyChillsSelected.toggle()
-                            }
-                            .font(.title2)
-                            .padding(.all,5.0)
+                        Button(action: {
+                            bodyChillsSelected.toggle()
+                        }) {
+                            Text("Body Chills")
+                                .font(.title3)
+                                .foregroundColor(.black)
+                                .padding([.top, .bottom], 10)
+                                .padding([.leading, .trailing], 15)
                         }
-                        .font(.largeTitle)
-                        .buttonStyle(.borderedProminent)
+                        .background(bodyChillsSelected ? Color.yellow : Color.gray)
+                        .cornerRadius(10)
                         
-                        HStack{
-                            Text(HeavyBleeding)
-                            Button("Heavybleeding"){
-                                HeavyBleedingSelected.toggle()
-                            }
-                            .font(.title2)
-                            .padding([.top,.leading, .trailing], 5.0)
+                        Button(action: {
+                            heavyBleedingSelected.toggle()
+                        }) {
+                            Text("Heavy Bleeding")
+                                .font(.title3)
+                                .foregroundColor(.black)
+                                .padding([.top, .bottom], 10)
+                                .padding([.leading, .trailing], 15)
                         }
-                        .font(.largeTitle)
-                        .buttonStyle(.borderedProminent)
-                        Spacer()
-                        
-                        
-                        
+                        .background(heavyBleedingSelected ? Color.yellow : Color.gray)
+                        .cornerRadius(10)
                     }
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: LearnMoreView()) {
+                        Text("Next")
+                            .font(.title2)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .background(Color.yellow)
+                            .cornerRadius(10.0)
+                            .padding(20.0)
+                    }
+                }
                 }
             }
         }
     }
-    
-    
-    
-    
-    
-    struct SelectMySymptons_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
-    }
-    
 }
+
