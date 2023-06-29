@@ -21,7 +21,7 @@ struct RecordSymptomsView: View {
         NavigationView {
             VStack(spacing: 20) {
                 ZStack {
-                    Image("Home")
+                    Image("Green")
                         .resizable()
                         .ignoresSafeArea()
                     VStack(spacing: 20) {

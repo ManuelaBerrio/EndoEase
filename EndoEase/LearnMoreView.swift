@@ -46,3 +46,9 @@ struct LearnMoreView: View {
         .navigationTitle("Symptoms")
     }
 }
+struct LearnMoreView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+        

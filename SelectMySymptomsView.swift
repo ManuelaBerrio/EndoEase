@@ -32,7 +32,7 @@ struct SelectMySymptomsView: View {
                 Spacer()
                 
                 ZStack {
-                    Image("Home")
+                    Image("Daisy")
                         .resizable()
                         .ignoresSafeArea()
                     
@@ -140,3 +140,10 @@ struct SelectMySymptomsView: View {
     }
 
     }
+struct SelectMySymptomsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+        
+
