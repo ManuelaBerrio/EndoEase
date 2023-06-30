@@ -1,11 +1,4 @@
-//
-//  SelectMySymptomsView.swift
-//  EndoEase
-//
-//  Created by Saranya Mandapaty on 6/29/23.
-//
-
-import Foundation
+//import Foundation
 import SwiftUI
 struct SelectMySymptomsView: View {
     let symptomToEmoji = [
@@ -32,7 +25,7 @@ struct SelectMySymptomsView: View {
                 Spacer()
                 
                 ZStack {
-                    Image("Daisy")
+                    Image("Symptoms")
                         .resizable()
                         .ignoresSafeArea()
                     
