@@ -15,7 +15,9 @@ struct TalkItOutView: View {
     var body: some View {
            
                 ZStack {
-                    Color.purple.edgesIgnoringSafeArea(.all)
+                        Image("Diary")
+                            .resizable()
+                            .ignoresSafeArea()
                     
                     VStack{
                       HStack {

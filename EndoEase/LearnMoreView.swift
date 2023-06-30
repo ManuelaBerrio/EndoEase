@@ -11,6 +11,10 @@ struct LearnMoreView: View {
     let symptoms = ["Vomiting", "Fainting Spells", "Dizziness/Fatigue", "Headaches", "Migraines", "Heavy Bleeding"]
     
     var body: some View {
+        ZStack {
+            Image("Symptoms")
+                .resizable()
+                .ignoresSafeArea()
         VStack {
             Picker("Select a symptom", selection: $selectedSymptom) {
                 ForEach(symptoms, id: \.self) {
@@ -45,6 +49,7 @@ struct LearnMoreView: View {
         }
         .navigationTitle("Symptoms")
     }
+}
 }
 struct LearnMoreView_Previews: PreviewProvider {
     static var previews: some View {
