@@ -12,7 +12,7 @@ struct LearnMoreView: View {
     
     var body: some View {
         ZStack {
-            Image("Symptoms")
+            Image("Learn")
                 .resizable()
                 .ignoresSafeArea()
         VStack {
